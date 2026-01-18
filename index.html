@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FPS Inspection Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>FPS Inspection Dashboard</h1>
+  <p>District / Sub-Division Monitoring</p>
+</header>
+
+<section class="kpi-container">
+  <div class="kpi" id="totalFps">Total FPS<br><strong>0</strong></div>
+  <div class="kpi inspected" id="inspectedFps">Inspected<br><strong>0</strong></div>
+  <div class="kpi pending" id="pendingFps">Pending<br><strong>0</strong></div>
+  <div class="kpi issue" id="issueFps">Issues<br><strong>0</strong></div>
+</section>
+
+<section class="table-section">
+  <h2>FPS Inspection Status</h2>
+
+  <input type="text" id="searchBox" placeholder="Search by Block / GP / FPS No">
+
+  <table>
+    <thead>
+      <tr>
+        <th>FPS No</th>
+        <th>Block</th>
+        <th>GP</th>
+        <th>Status</th>
+        <th>Last Inspection</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody id="fpsTable"></tbody>
+  </table>
+</section>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
